@@ -1,13 +1,12 @@
 package com.capstone.easyfarm
 
 import android.content.Context
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import com.bumptech.glide.Glide
 
 class ListViewBtnAdapter internal constructor(
@@ -27,6 +26,8 @@ class ListViewBtnAdapter internal constructor(
         val textView1 = convertView.findViewById<View>(R.id.textView1) as TextView
         val textView2 = convertView.findViewById<View>(R.id.textView2) as TextView
         val textView3 = convertView.findViewById<View>(R.id.textView3) as TextView
+        val tv1 = convertView.findViewById<View>(R.id.tv1) as TextView
+        val tv2 = convertView.findViewById<View>(R.id.tv2) as TextView
 
         val listViewItem = getItem(position) as ListViewBtnItem?
 
@@ -52,19 +53,23 @@ class ListViewBtnAdapter internal constructor(
             "정상_파" -> textView1.text = "정상_파"
             "정상_무" -> textView1.text = "정상_무"
         }
-        if (listViewItem.MyPlant_Pest.substring(0 until 2) == "정상")
-            (convertView.findViewById<View>(R.id.button1) as Button).visibility=View.INVISIBLE
-
+        if (listViewItem.MyPlant_Pest.substring(0 until 2) == "정상") {
+            (convertView.findViewById<View>(R.id.button1) as ImageButton).visibility =
+                View.INVISIBLE
+            tv1.visibility = View.INVISIBLE
+        }
         textView2.text = "${listViewItem.MyPlant_Percentage}%"
         textView3.text = listViewItem.MyPlant_Date.substring(0..9)
 
-        val button1 = convertView.findViewById<View>(R.id.button1) as Button
+        val button1 = convertView.findViewById<View>(R.id.button1) as ImageButton
         button1.tag = position
         button1.setOnClickListener(this)
+        button1.imageTintList = ColorStateList.valueOf(Color.parseColor("#8BC34A"))
 
-        val button2 = convertView.findViewById<View>(R.id.button2) as Button
+        val button2 = convertView.findViewById<View>(R.id.button2) as ImageButton
         button2.tag = position
         button2.setOnClickListener(this)
+        button2.imageTintList = ColorStateList.valueOf(Color.parseColor("#8BC34A"))
 
         return convertView
     }
@@ -84,6 +89,5 @@ class ListViewBtnAdapter internal constructor(
     init {
         listBtnClickListener = listBtnClickListener
     }
-
 
 }

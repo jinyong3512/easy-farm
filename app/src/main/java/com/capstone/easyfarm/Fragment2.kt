@@ -45,7 +45,6 @@ class Fragment2 : Fragment() {
         binding.btn5.setColorFilter(resources.getColor(R.color.green))
 
 
-
         // btn1(도감) 누를 시 "2" 전달하고 PlantSelectActivity로 이동
         binding.btn1.setOnClickListener {
             val intent = Intent(activity, PlantSelectActivity::class.java)

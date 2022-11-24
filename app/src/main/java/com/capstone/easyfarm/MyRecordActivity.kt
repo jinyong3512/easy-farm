@@ -96,11 +96,8 @@ class MyRecordActivity : AppCompatActivity() {
                         Toast.makeText(this@MyRecordActivity, "삭제 완료", Toast.LENGTH_SHORT).show()
 
                         items.removeAt(position)
-//                        adapter.notifyDataSetChanged()
-                        adapter = ListViewBtnAdapter(this@MyRecordActivity, R.layout.listview_btn_item, items, this@MyRecordActivity)
+                        adapter.notifyDataSetChanged()
                         binding.listview1.adapter = adapter
-
-
 
                     } else {
                         Log.d("response 실패", response.code().toString())

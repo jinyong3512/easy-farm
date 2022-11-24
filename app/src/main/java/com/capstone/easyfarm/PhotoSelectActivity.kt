@@ -108,9 +108,9 @@ class PhotoSelectActivity : AppCompatActivity() {
 
             if (photoUri != null) {
                 showProgressBar(true)
-                binding.btn1.isClickable=false
-                binding.btn2.isClickable=false
-                binding.btn3.isClickable=false
+                binding.btn1.isClickable = false
+                binding.btn2.isClickable = false
+                binding.btn3.isClickable = false
                 if (photoUri!!.path.equals("/my_internal_images/photo.jpg"))
                     realPath = "/data/data/com.capstone.easyfarm/files/image/photo.jpg"
                 else
@@ -329,18 +329,19 @@ class PhotoSelectActivity : AppCompatActivity() {
                         intent.putExtra("realPath", realPath)
 
                         showProgressBar(false)
-                        binding.btn1.isClickable=true
-                        binding.btn2.isClickable=true
-                        binding.btn3.isClickable=true
+                        binding.btn1.isClickable = true
+                        binding.btn2.isClickable = true
+                        binding.btn3.isClickable = true
                         startActivity(intent)
 
                     } else {
                         Log.d("response 실패", response.code().toString())
-                        Toast.makeText(this@PhotoSelectActivity, "response 실패", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@PhotoSelectActivity, "response 실패", Toast.LENGTH_SHORT)
+                            .show()
                         showProgressBar(false)
-                        binding.btn1.isClickable=true
-                        binding.btn2.isClickable=true
-                        binding.btn3.isClickable=true
+                        binding.btn1.isClickable = true
+                        binding.btn2.isClickable = true
+                        binding.btn3.isClickable = true
                     }
                 }
 
@@ -348,15 +349,15 @@ class PhotoSelectActivity : AppCompatActivity() {
                     Log.d("실패", t.message.toString())
                     Toast.makeText(this@PhotoSelectActivity, "실패", Toast.LENGTH_SHORT).show()
                     showProgressBar(false)
-                    binding.btn1.isClickable=true
-                    binding.btn2.isClickable=true
-                    binding.btn3.isClickable=true
+                    binding.btn1.isClickable = true
+                    binding.btn2.isClickable = true
+                    binding.btn3.isClickable = true
                 }
             })
     }
 
-    fun showProgressBar(isShow:Boolean){
-        if (isShow) binding.progressBar.visibility= View.VISIBLE
-        else binding.progressBar.visibility= View.GONE
+    fun showProgressBar(isShow: Boolean) {
+        if (isShow) binding.progressBar.visibility = View.VISIBLE
+        else binding.progressBar.visibility = View.GONE
     }
 }

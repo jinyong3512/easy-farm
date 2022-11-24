@@ -65,7 +65,7 @@ class ResultActivity : AppCompatActivity() {
 
         // 확률
         pestPercentage = intent.getDoubleExtra("pestPercentage", 0.19971016)
-        pestPercentage = (pestPercentage * 10000.0).roundToInt()  /100.0
+        pestPercentage = (pestPercentage * 10000.0).roundToInt() / 100.0
         binding.tv3.text = "${pestPercentage}%"
 
         var URL = ""
@@ -91,9 +91,9 @@ class ResultActivity : AppCompatActivity() {
         // 나의 식물에 추가
         btn2.setOnClickListener {
             showProgressBar(true)
-            binding.btn1.isClickable=false
-            binding.btn2.isClickable=false
-            binding.btn3.isClickable=false
+            binding.btn1.isClickable = false
+            binding.btn2.isClickable = false
+            binding.btn3.isClickable = false
             work_PostResult()
         }
 
@@ -154,18 +154,20 @@ class ResultActivity : AppCompatActivity() {
                         Log.d("성공", result)
 
                         showProgressBar(false)
-                        binding.btn1.isClickable=true
-                        binding.btn2.isClickable=true
-                        binding.btn3.isClickable=true
+                        binding.btn1.isClickable = true
+                        binding.btn2.isClickable = true
+                        binding.btn3.isClickable = true
 
-                        Toast.makeText(this@ResultActivity, "진단 결과 업로드 성공", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ResultActivity, "진단 결과 업로드 성공", Toast.LENGTH_SHORT)
+                            .show()
                     } else {
                         Log.d("response 실패", response.code().toString())
-                        Toast.makeText(this@ResultActivity, "response 실패", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ResultActivity, "response 실패", Toast.LENGTH_SHORT)
+                            .show()
                         showProgressBar(false)
-                        binding.btn1.isClickable=true
-                        binding.btn2.isClickable=true
-                        binding.btn3.isClickable=true
+                        binding.btn1.isClickable = true
+                        binding.btn2.isClickable = true
+                        binding.btn3.isClickable = true
                     }
                 }
 
@@ -173,15 +175,15 @@ class ResultActivity : AppCompatActivity() {
                     Log.d("실패", t.message.toString())
                     Toast.makeText(this@ResultActivity, "실패", Toast.LENGTH_SHORT).show()
                     showProgressBar(false)
-                    binding.btn1.isClickable=true
-                    binding.btn2.isClickable=true
-                    binding.btn3.isClickable=true
+                    binding.btn1.isClickable = true
+                    binding.btn2.isClickable = true
+                    binding.btn3.isClickable = true
                 }
             })
     }
 
-    fun showProgressBar(isShow:Boolean){
-        if (isShow) binding.progressBar.visibility= View.VISIBLE
-        else binding.progressBar.visibility= View.GONE
+    fun showProgressBar(isShow: Boolean) {
+        if (isShow) binding.progressBar.visibility = View.VISIBLE
+        else binding.progressBar.visibility = View.GONE
     }
 }

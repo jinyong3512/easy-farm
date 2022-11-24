@@ -29,15 +29,17 @@ class Fragment3 : Fragment() {
 
         binding = Fragment3Binding.inflate(inflater, container, false)
 
-        binding.tv1.text = "디바이스 ID : "+SplashActivity.deviceId
 
 
-        if ( SplashActivity.latitude>=33 && SplashActivity.latitude<=39 &&
-                SplashActivity.longitude>=126 && SplashActivity.latitude <=129){
+        binding.tv1.text = "디바이스 ID : " + SplashActivity.deviceId
+
+        if (SplashActivity.latitude >= 33 && SplashActivity.latitude <= 39 &&
+            SplashActivity.longitude >= 126 && SplashActivity.latitude <= 129
+        ) {
             // Geocoder 하고
-            binding.tv2.text = "현재 위치 : ${getAddress(SplashActivity.latitude,SplashActivity.longitude)}"
-        }
-        else {
+            binding.tv2.text =
+                "현재 위치 : ${getAddress(SplashActivity.latitude, SplashActivity.longitude)}"
+        } else {
             binding.tv2.text =
                 "위도 : " + SplashActivity.latitude.toString() + '\n' + "경도 : " + SplashActivity.longitude.toString()
         }
@@ -95,7 +97,7 @@ class Fragment3 : Fragment() {
                             text = "res.send 이상함"
                         }
 
-                        Toast.makeText(activity,text,Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, text, Toast.LENGTH_SHORT).show()
 
 
                     } else {
@@ -110,7 +112,7 @@ class Fragment3 : Fragment() {
     }
 
     //위도 경도로 주소 구하는 Reverse-GeoCoding
-    private fun getAddress(latitude : Double , longitude : Double): String {
+    private fun getAddress(latitude: Double, longitude: Double): String {
         val geoCoder = Geocoder(context, Locale.KOREA)
         var addr = "Reverse-GeoCoding 오류"
 

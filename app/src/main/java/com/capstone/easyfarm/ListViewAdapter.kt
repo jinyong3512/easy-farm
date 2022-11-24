@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class ListViewAdapter(val List : MutableList<DataModel>) : BaseAdapter() {
+class ListViewAdapter(val List: MutableList<DataModel>) : BaseAdapter() {
     override fun getCount(): Int {
         return List.size
     }
@@ -24,7 +24,8 @@ class ListViewAdapter(val List : MutableList<DataModel>) : BaseAdapter() {
         var convertView = convertView
         if (convertView == null) {
 
-            convertView = LayoutInflater.from(parent?.context).inflate(R.layout.listview_item, parent, false)
+            convertView =
+                LayoutInflater.from(parent?.context).inflate(R.layout.listview_item, parent, false)
 
         }
 

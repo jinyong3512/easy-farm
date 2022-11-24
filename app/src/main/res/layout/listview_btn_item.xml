@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
     android:orientation="horizontal"
     tools:context=".MyRecordActivity">
 
     <ImageView
         android:id="@+id/imageView1"
+        android:padding="5dp"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="4" />
@@ -15,7 +16,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:orientation="vertical">
 
         <TextView
@@ -25,10 +26,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
 
-            android:gravity="center_vertical"
+            android:gravity="center"
 
             android:text="New Text"
-            android:textSize="15dp" />
+            android:textColor="@color/black"
+            android:textSize="22dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -37,10 +39,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
 
-            android:gravity="center_vertical"
+            android:gravity="center"
 
             android:text="New Text"
-            android:textSize="10dp" />
+            android:textColor="@color/black"
+            android:textSize="17dp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -49,37 +52,69 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
 
-            android:gravity="center_vertical"
+            android:gravity="center"
 
             android:text="New Text"
-            android:textSize="5dp" />
+            android:textColor="@color/black"
+            android:textSize="12dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:orientation="horizontal">
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <Button
+        <ImageButton
             android:id="@+id/button1"
 
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
 
+            android:background="@drawable/custom_button_selector_white_green"
+            android:src="@drawable/myrecord_icon_dictionary" />
+
+        <TextView
+            android:id="@+id/tv1"
+
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+
+            android:gravity="center"
 
             android:text="도감"
-            android:layout_weight="1" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
 
-        <Button
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
             android:id="@+id/button2"
 
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/custom_button_selector_white_green"
+            android:src="@drawable/myrecord_icon_delete" />
+
+        <TextView
+            android:id="@+id/tv2"
+
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+
+            android:gravity="center"
 
             android:text="삭제"
-            android:layout_weight="1" />
-
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </LinearLayout>

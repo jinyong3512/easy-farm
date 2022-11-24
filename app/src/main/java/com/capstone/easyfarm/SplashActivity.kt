@@ -28,7 +28,7 @@ class SplashActivity : AppCompatActivity() {
 
     companion object {
 
-//        val BASE_URL_FLASK = "http://192.168.0.101:5000/"       // WIFI home
+        //        val BASE_URL_FLASK = "http://192.168.0.101:5000/"       // WIFI home
 //        val BASE_URL_FLASK = "http://192.168.21.15:5000/"       // HOTSPOT
 //        val BASE_URL_FLASK = "http://34.64.86.255:5000/"        // HOTSPOT 원형
         val BASE_URL_FLASK = "http://34.64.86.255:5000/"        // AWS 원형
@@ -237,20 +237,20 @@ class SplashActivity : AppCompatActivity() {
             })
     }
 
-    fun userIdCheck(){
+    fun userIdCheck() {
         var auth = FirebaseAuth.getInstance()
-        val user =  auth.currentUser
+        val user = auth.currentUser
 
-        if(user != null){ // 이미 가입한 회원인 경우
+        if (user != null) { // 이미 가입한 회원인 경우
             userId = user.uid // uid를 가져온다.
             Log.d("익명로그인 중복", userId)
-        }else{
+        } else {
             auth.signInAnonymously() // 익명으로 가입한다.
-                .addOnCompleteListener(this){ task ->
-                    if(task.isSuccessful){ // 가입 성공한 경우
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) { // 가입 성공한 경우
                         userId = auth.currentUser!!.uid
                         Log.d("익명로그인 성공", userId)
-                    }else{
+                    } else {
                         // 가입 실패한 경우
                     }
                 }

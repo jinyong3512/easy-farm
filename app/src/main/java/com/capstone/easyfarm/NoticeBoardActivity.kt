@@ -36,27 +36,28 @@ class NoticeBoardActivity : AppCompatActivity() {
 
         Log.d("DataModel------", dataModelList.toString())
 
-        myRef.child(Firebase.auth.currentUser!!.uid).addValueEventListener(object : ValueEventListener{
-            override fun onDataChange(snapshot: DataSnapshot) {
-                Log.d("point", dataModelList.toString())
-                dataModelList.clear()
-                Log.d("point", dataModelList.toString())
+        myRef.child(Firebase.auth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    Log.d("point", dataModelList.toString())
+                    dataModelList.clear()
+                    Log.d("point", dataModelList.toString())
 
-                for (dataModel in snapshot.children) {
-                    Log.d("Data", dataModel.toString())
-                    dataModelList.add(dataModel.getValue(DataModel::class.java)!!)
+                    for (dataModel in snapshot.children) {
+                        Log.d("Data", dataModel.toString())
+                        dataModelList.add(dataModel.getValue(DataModel::class.java)!!)
+
+                    }
+                    adapter_list.notifyDataSetChanged()
+                    Log.d("DataModel", dataModelList.toString())
 
                 }
-                adapter_list.notifyDataSetChanged()
-                Log.d("DataModel", dataModelList.toString())
 
-            }
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-
-        })
+            })
 
         //메모 입력
         val writeButton = findViewById<ImageView>(R.id.writeBtn)
@@ -77,12 +78,13 @@ class NoticeBoardActivity : AppCompatActivity() {
             DateSelectBtn?.setOnClickListener {
 
                 val today = GregorianCalendar()
-                val year : Int = today.get(Calendar.YEAR)
-                val month : Int = today.get(Calendar.MONTH)
-                val date : Int = today.get(Calendar.DATE)
+                val year: Int = today.get(Calendar.YEAR)
+                val month: Int = today.get(Calendar.MONTH)
+                val date: Int = today.get(Calendar.DATE)
 
                 val dlg = DatePickerDialog(this, object : DatePickerDialog.OnDateSetListener {
-                    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
+                    override fun onDateSet(
+                        view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
                     ) {
                         Log.d("MAIN", "${year}. ${month + 1}. ${dayOfMonth}")
                         DateSelectBtn.setText("${year}. ${month + 1}. ${dayOfMonth}")
