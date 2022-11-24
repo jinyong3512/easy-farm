@@ -85,7 +85,7 @@ class PhotoSelectActivity : AppCompatActivity() {
 
             photoUri = FileProvider.getUriForFile(
                 this,
-                "com.example.easyfarm.fileprovider",
+                "com.capstone.easyfarm.fileprovider",
                 photoFile
             )
             takePictureIntent.resolveActivity(packageManager)?.also {
@@ -112,7 +112,7 @@ class PhotoSelectActivity : AppCompatActivity() {
                 binding.btn2.isClickable=false
                 binding.btn3.isClickable=false
                 if (photoUri!!.path.equals("/my_internal_images/photo.jpg"))
-                    realPath = "/data/data/com.example.easyfarm/files/image/photo.jpg"
+                    realPath = "/data/data/com.capstone.easyfarm/files/image/photo.jpg"
                 else
                     realPath = getRealPathFromURI(this@PhotoSelectActivity, photoUri)
 
