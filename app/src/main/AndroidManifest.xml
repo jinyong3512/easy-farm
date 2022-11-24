@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.capstone.easyfarm">
+
+    // 권한 추가
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    // 아이콘 변경하고 맨 밑 설정 3개 추가
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_image_easyfarm"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.EasyFarm"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        // SplashActivity를 먼저 뜨게 변경
+        <activity
+            android:name="com.capstone.easyfarm.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.EasyFarm.statusBarWhite">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        // .kt 파일 추가해주기
+        <activity
+            android:name="com.capstone.easyfarm.NaviActivity"
+            android:theme="@style/Theme.EasyFarm.statusBarBrightGrey" />
+        <activity android:name="com.capstone.easyfarm.PlantSelectActivity" />
+        <activity android:name="com.capstone.easyfarm.PhotoSelectActivity" />
+        <activity android:name="com.capstone.easyfarm.PestSelectActivity" />
+        <activity android:name="com.capstone.easyfarm.ResultActivity" />
+        <activity android:name="com.capstone.easyfarm.WebViewActivity" />
+        <activity android:name="com.capstone.easyfarm.NoticeBoardActivity" />
+        <activity android:name="com.capstone.easyfarm.MyRecordActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        // provider 추가
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.capstone.easyfarm.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

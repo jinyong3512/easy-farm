@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524068947100",
+    "firebase_url": "https://easyfarm-f780d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "easyfarm-f780d",
+    "storage_bucket": "easyfarm-f780d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524068947100:android:d24d4fd3a95daeec2e1959",
+        "android_client_info": {
+          "package_name": "com.capstone.easyfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524068947100-jppouj11b8lvjm5l70jidqir1o41babb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstone.easyfarm",
+            "certificate_hash": "79601d2707ee38237b2578f6e7c8aa99298b3fed"
+          }
+        },
+        {
+          "client_id": "524068947100-pffl8q3i66a6j8jcrni4uahroetv27g4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeUgZ19c5MHj2nzNk01DJEPtgp6tJ1iQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524068947100-pffl8q3i66a6j8jcrni4uahroetv27g4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

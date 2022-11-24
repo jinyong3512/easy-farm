@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Fragment3">
+
+    <TextView
+        android:id="@+id/tv1"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_margin="10dp"
+
+        android:text="디바이스ID 떠야함"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_margin="10dp"
+
+        android:text="주소 떠야 함"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/btn1"
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+
+
+        android:drawableLeft="@drawable/fragment3_icon_alarmsetting"
+
+        android:text="푸시 알림 설정"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

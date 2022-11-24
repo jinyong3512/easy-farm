@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PestSelectActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/green"
+
+        android:minHeight="?attr/actionBarSize"
+
+        app:contentInsetStart="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/custom_font_family"
+            android:text="병해충 선택"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <android.widget.Button
+        android:id="@+id/btn1"
+
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/custom_button_selector_white_green"
+        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"
+        android:drawableTint="@color/green"
+
+        android:text="콩"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <android.widget.Button
+        android:id="@+id/btn2"
+
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/custom_button_selector_white_green"
+        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"
+        android:drawableTint="@color/green"
+
+        android:text="배추"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <android.widget.Button
+        android:id="@+id/btn3"
+
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/custom_button_selector_white_green"
+        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"
+        android:drawableTint="@color/green"
+
+        android:text="고추"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.75" />
+
+
+    <!--    <android.widget.Button-->
+<!--        android:id="@+id/btn1"-->
+
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_margin="10dp"-->
+
+
+<!--        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"-->
+
+<!--        android:text="btn1"-->
+<!--        android:textSize="30sp" />-->
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/btn2"-->
+
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_margin="10dp"-->
+
+
+<!--        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"-->
+
+<!--        android:text="btn2"-->
+<!--        android:textSize="30sp"/>-->
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/btn3"-->
+
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_margin="10dp"-->
+
+
+<!--        android:drawableLeft="@drawable/fragment1_icon_pestdiagnosis"-->
+
+<!--        android:text="btn3"-->
+<!--        android:textSize="30sp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
