@@ -3,20 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment1_icon_pestdiagnosis.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment2_icon_alarmrecord.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment2_icon_dictionary.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment2_icon_forecast.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment2_icon_noticeboard.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment2_icon_plantrecord.xml" value="0.1" />
+        <entry key="..\:/easyfarm/app/src/main/res/drawable/fragment3_icon_alarmsetting.xml" value="0.1" />
         <entry key="..\:/easyfarm/app/src/main/res/drawable/myrecord_icon_delete.xml" value="0.1" />
         <entry key="..\:/easyfarm/app/src/main/res/drawable/myrecord_icon_dictionary.xml" value="0.1" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_myrecord.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_navi.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_noticeboard.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_pestselect.xml" value="0.24947916666666667" />
+        <entry key="..\:/easyfarm/app/src/main/res/layout/activity_photoselect.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_plantselect.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_result.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/activity_splash.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/custom_dialog.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/fragment1.xml" value="0.24947916666666667" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/fragment2.xml" value="0.24947916666666667" />
+        <entry key="..\:/easyfarm/app/src/main/res/layout/fragment3.xml" value="0.13703703703703704" />
         <entry key="..\:/easyfarm/app/src/main/res/layout/listview_btn_item.xml" value="0.264" />
-        <entry key="..\:/easyfarm/app/src/main/res/layout/listview_item.xml" value="0.24947916666666667" />
+        <entry key="..\:/easyfarm/app/src/main/res/layout/listview_item.xml" value="0.6" />
       </map>
     </option>
   </component>

@@ -29,7 +29,7 @@ class Fragment3 : Fragment() {
 
         binding = Fragment3Binding.inflate(inflater, container, false)
 
-
+        binding.btn1.setColorFilter(resources.getColor(R.color.green))
 
         binding.tv1.text = "디바이스 ID : " + SplashActivity.deviceId
 

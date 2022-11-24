@@ -36,7 +36,8 @@
         <activity
             android:name="com.capstone.easyfarm.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.EasyFarm.statusBarWhite">
+            android:theme="@style/Theme.EasyFarm.statusBarWhite"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

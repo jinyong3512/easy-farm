@@ -23,10 +23,8 @@ class ListViewAdapter(val List: MutableList<DataModel>) : BaseAdapter() {
 
         var convertView = convertView
         if (convertView == null) {
-
             convertView =
                 LayoutInflater.from(parent?.context).inflate(R.layout.listview_item, parent, false)
-
         }
 
         val date = convertView?.findViewById<TextView>(R.id.listViewDateArea)
@@ -36,6 +34,5 @@ class ListViewAdapter(val List: MutableList<DataModel>) : BaseAdapter() {
         memo!!.text = List[position].memo
 
         return convertView!!
-
     }
 }
