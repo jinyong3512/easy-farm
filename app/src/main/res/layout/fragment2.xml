@@ -8,14 +8,26 @@
     android:orientation="vertical"
     tools:context=".Fragment2">
 
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+
+        android:src="@drawable/fragment2_image_iv1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/btn1"
 
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="210dp"
 
-        android:background="@drawable/custom_button_selector_white_green"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#B2C5A7"
         android:src="@drawable/fragment2_icon_dictionary"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +43,11 @@
         android:layout_marginTop="8dp"
 
         android:gravity="center"
-        android:text="도감"
-        android:textColor="@color/black"
 
-        android:textSize="30sp"
+        android:text="도감"
+        android:textColor="#7F7F7F"
+        android:textSize="25sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,9 +58,10 @@
 
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="210dp"
 
-        android:background="@drawable/custom_button_selector_white_green"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#ADCDCF"
         android:src="@drawable/fragment2_icon_plantrecord"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,9 +78,8 @@
 
         android:gravity="center"
         android:text="나의 기록"
-        android:textColor="@color/black"
-
-        android:textSize="30sp"
+        android:textColor="#7F7F7F"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,9 +90,10 @@
 
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="480dp"
 
-        android:background="@drawable/custom_button_selector_white_green"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#E1C8AD"
         android:src="@drawable/fragment2_icon_forecast"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,9 +110,8 @@
 
         android:gravity="center"
         android:text="예보"
-        android:textColor="@color/black"
-
-        android:textSize="30sp"
+        android:textColor="#7F7F7F"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,9 +122,10 @@
 
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="480dp"
 
-        android:background="@drawable/custom_button_selector_white_green"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#EADAA0"
         android:src="@drawable/fragment2_icon_noticeboard"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,10 +141,9 @@
         android:layout_marginTop="8dp"
 
         android:gravity="center"
-        android:text="메모장"
-        android:textColor="@color/black"
-
-        android:textSize="30sp"
+        android:text="메모"
+        android:textColor="#7F7F7F"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"

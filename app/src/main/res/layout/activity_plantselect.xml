@@ -6,134 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".PlantSelectActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <TextView
+        android:id="@+id/textView"
 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:background="@color/green"
-
-        android:minHeight="?attr/actionBarSize"
-
-        app:contentInsetStart="0dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:fontFamily="@font/custom_font_family"
-            android:text="작물 선택"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <android.widget.Button
-        android:id="@+id/btn1"
-
-        android:layout_width="350dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/custom_button_selector_white_green"
-
-        android:drawableLeft="@drawable/plantselect_icon_bean"
-        android:drawableTint="@color/green"
-
-        android:text="콩"
+        android:text="작물 선택"
         android:textColor="@color/black"
-        android:textSize="40sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
-
-
-    <android.widget.Button
-        android:id="@+id/btn2"
-
-        android:layout_width="350dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:drawableLeft="@drawable/plantselect_icon_cabbage"
-        android:drawableTint="@color/green"
-
-        android:text="배추"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1" />
-
-    <android.widget.Button
-        android:id="@+id/btn3"
-
-        android:layout_width="350dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:drawableLeft="@drawable/plantselect_icon_pepper"
-        android:drawableTint="@color/green"
-
-        android:text="고추"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn2" />
-
-    <android.widget.Button
-        android:id="@+id/btn4"
-
-        android:layout_width="350dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:drawableLeft="@drawable/plantselect_icon_onion"
-        android:drawableTint="@color/green"
-
-        android:text="파"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn3" />
-
-    <android.widget.Button
-        android:id="@+id/btn5"
-        android:layout_width="350dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:drawableLeft="@drawable/plantselect_icon_radish"
-        android:drawableTint="@color/green"
-
-        android:text="무"
-        android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plantselect_image_btn1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plantselect_image_btn2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plantselect_image_btn3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <ImageButton
+        android:id="@+id/btn4"
+
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plantselect_image_btn4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <ImageButton
+        android:id="@+id/btn5"
+
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plantselect_image_btn5"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

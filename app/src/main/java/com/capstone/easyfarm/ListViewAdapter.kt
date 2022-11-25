@@ -1,9 +1,12 @@
 package com.capstone.easyfarm
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageButton
 import android.widget.TextView
 
 class ListViewAdapter(val List: MutableList<DataModel>) : BaseAdapter() {

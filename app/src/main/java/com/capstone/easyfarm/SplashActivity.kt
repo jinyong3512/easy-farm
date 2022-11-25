@@ -83,9 +83,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // actionBar 숨기기
-        supportActionBar?.hide()
-
         // 디바이스 ID 구하기
         deviceId = Settings.Secure.getString(
             contentResolver,

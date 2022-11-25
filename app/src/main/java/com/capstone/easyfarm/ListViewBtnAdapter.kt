@@ -27,7 +27,6 @@ class ListViewBtnAdapter internal constructor(
         val textView2 = convertView.findViewById<View>(R.id.textView2) as TextView
         val textView3 = convertView.findViewById<View>(R.id.textView3) as TextView
         val tv1 = convertView.findViewById<View>(R.id.tv1) as TextView
-        val tv2 = convertView.findViewById<View>(R.id.tv2) as TextView
 
         val listViewItem = getItem(position) as ListViewBtnItem?
 

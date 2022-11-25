@@ -6,150 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/result_image_iv2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+
+        android:adjustViewBounds="true"
+
+        android:backgroundTint="#D3DCC6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/result_image_btn3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/iv1"
+
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+
+        android:adjustViewBounds="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/result_image_btn1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tv2"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
 
-        android:background="@color/green"
-
-        android:minHeight="?attr/actionBarSize"
-
-        app:contentInsetStart="0dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:fontFamily="@font/custom_font_family"
-            android:text="진단 결과"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintlayout"
-        android:layout_width="400dp"
-        android:layout_height="600dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-
-
-        app:layout_constraintBottom_toTopOf="@id/btn3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-
-        <ImageView
-            android:id="@+id/iv1"
-
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_margin="10dp"
-            android:padding="8dp"
-
-            android:adjustViewBounds="true"
-            android:src="@drawable/photoselect_image_nophoto"
-
-            app:layout_constraintBottom_toTopOf="@id/tv2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv2"
-
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:gravity="center"
-
-            android:text="감지된 병해충명 떠야 함"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-
-            app:layout_constraintBottom_toTopOf="@id/tv3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv1" />
-
-        <TextView
-            android:id="@+id/tv3"
-
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:gravity="center"
-
-            android:text=" 확률 떠야 함"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-
-            app:layout_constraintBottom_toTopOf="@id/btn1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv2" />
-
-        <android.widget.Button
-            android:id="@+id/btn1"
-
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"
-
-            android:background="@drawable/custom_button_selector_brightgrey_green"
-
-            android:text="도감"
-            android:textSize="25dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btn2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv3" />
-
-        <android.widget.Button
-            android:id="@+id/btn2"
-
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"
-
-            android:background="@drawable/custom_button_selector_brightgrey_green"
-
-            android:text="기록 추가"
-            android:textSize="25dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btn1"
-            app:layout_constraintTop_toBottomOf="@id/tv3" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <android.widget.Button
-        android:id="@+id/btn3"
-
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_margin="5dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:text="메인화면 이동"
+        android:text="감지된 병해충명 떠야 함"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+
+    <ProgressBar
+        android:id="@+id/pb1"
+        style="?android:attr/progressBarStyleHorizontal"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:progressTint="#FF7AA7"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/tv3"
+
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+
+        android:text=" 확률 떠야 함"
+        android:textAlignment="center"
+        android:textColor="#FF7AA7"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/result_image_iv3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="288dp"
+        android:layout_height="35dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/result_image_iv4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+
+        android:layout_width="183dp"
+        android:layout_height="128dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/result_image_btn2"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/constraintlayout" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ProgressBar
         android:id="@+id/progressBar"

@@ -15,9 +15,9 @@ class Fragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = Fragment1Binding.inflate(inflater, container, false)
+        requireActivity().window.statusBarColor = requireActivity().getColor(R.color.fragment_statusBar_color_1)
 
-        binding.btn1.setColorFilter(resources.getColor(R.color.green))
+        val binding = Fragment1Binding.inflate(inflater, container, false)
 
         // btn1(병해충 진단) 누를 시 "1" 전달하고 PlantSelectActivity로 이동
         binding.btn1.setOnClickListener {

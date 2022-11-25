@@ -1,5 +1,6 @@
 package com.capstone.easyfarm
 
+import android.app.StatusBarManager
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -32,6 +33,8 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         showProgressBar(false)
 
@@ -67,11 +70,14 @@ class ResultActivity : AppCompatActivity() {
         pestPercentage = intent.getDoubleExtra("pestPercentage", 0.19971016)
         pestPercentage = (pestPercentage * 10000.0).roundToInt() / 100.0
         binding.tv3.text = "${pestPercentage}%"
+        binding.pb1.progress = pestPercentage.toInt()
 
         var URL = ""
         if ((pestName?.substring(0..1)).equals("정상")) {
             btn1.visibility = View.INVISIBLE
+            iv3.visibility=View.INVISIBLE
         } else {
+            iv4.visibility=View.INVISIBLE
             for (i in 0 until SplashActivity.PEST_NAMES.size) {
                 for (j in 0 until SplashActivity.PEST_NAMES[i].size) {
                     if (SplashActivity.PEST_NAMES[i][j] == pestName)

@@ -13,9 +13,6 @@ class NaviActivity : AppCompatActivity() {
         binding = ActivityNaviBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 액션 바 타이틀 "이지팜"으로 변경
-        supportActionBar?.title = "이지팜"
-
         // 최초 실행 화면 안쪽 틀을 Fragment1으로 띄우기
         supportFragmentManager.beginTransaction()
             .replace(R.id.mainFrameLayout, Fragment1())

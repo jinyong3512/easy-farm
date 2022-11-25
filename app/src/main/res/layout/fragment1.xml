@@ -4,39 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".Fragment1">
 
-    <ImageButton
-        android:id="@+id/btn1"
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
 
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:src="@drawable/fragment1_image_iv1"
 
-        android:background="@drawable/custom_button_selector_white_green"
-        android:src="@drawable/fragment1_icon_pestdiagnosis"
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
 
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="8dp"
-
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="병해충 진단"
+
         android:textColor="@color/black"
 
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1" />
+        app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+
+        android:text="콩, 배추, 고추, 파, 무 5종의 작물 병해충 진단을 통해 작물의 건강을 확인하고 처방을 받아보세요"
+        android:textColor="#5C5C5C"
+
+        android:textSize="17sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fragment1_image_btn1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

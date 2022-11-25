@@ -9,8 +9,15 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--추가-->
-    <color name="green">#8BC34A</color>
-    <color name="grey">#646464</color>
-    <color name="brightGrey">#E6E6E6</color>
+    <color name="green">#75B37C</color>
+    <color name="pest_color_1">#C7D5BF</color>
+    <color name="pest_color_2">#D0E2E3</color>
+    <color name="pest_color_3">#EBDBC9</color>
+    <color name="pest_color_4">#ECE2E2</color>
+    <color name="pest_color_5">#F2E8C4</color>
+    <color name="fragment_statusBar_color_1">#DAE3CD</color>
+    <color name="fragment_statusBar_color_2">#F1F1F1</color>
+
+
 </resources>
 

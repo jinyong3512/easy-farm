@@ -6,100 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".PhotoSelectActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <TextView
+        android:id="@+id/tv1"
 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:background="@color/green"
+        android:text="사진 가져오기"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
 
-        android:minHeight="?attr/actionBarSize"
-
-        app:contentInsetStart="0dp"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:adjustViewBounds="true"
 
-            android:fontFamily="@font/custom_font_family"
-            android:text="사진 선택"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+        android:background="@drawable/photoselect_image_iv1"
 
-    </androidx.appcompat.widget.Toolbar>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
 
     <ImageView
         android:id="@+id/iv1"
 
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:padding="8dp"
-
+        android:layout_width="320dp"
+        android:layout_height="390dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/photoselect_icon_nophoto"
-        android:background="@drawable/custom_button_selector_brightgrey_green"
-
-        app:layout_constraintBottom_toTopOf="@id/btn1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
-
-    <android.widget.Button
-        android:id="@+id/btn1"
-
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_margin="5dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:text="카메라"
-        android:textSize="30sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv1" />
-
-    <android.widget.Button
-        android:id="@+id/btn2"
-
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_margin="5dp"
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:text="갤러리"
-        android:textSize="30sp"
-
-        app:layout_constraintBottom_toTopOf="@id/btn3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1" />
-
-    <android.widget.Button
-        android:id="@+id/btn3"
-
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_margin="5dp"
-
-
-        android:background="@drawable/custom_button_selector_white_green"
-        android:text="분석 시작"
-        android:textSize="30sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/photoselect_image_btn1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/photoselect_image_btn2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fragment1_image_btn1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
     <ProgressBar
         android:id="@+id/progressBar"

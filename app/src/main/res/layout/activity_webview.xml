@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:background="@color/green"
+        android:background="@color/white"
 
         android:minHeight="?attr/actionBarSize"
 
@@ -31,7 +31,7 @@
 
             android:fontFamily="@font/custom_font_family"
             android:text="변경 해주기"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 

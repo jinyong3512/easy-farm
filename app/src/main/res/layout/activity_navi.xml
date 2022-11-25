@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/brightGrey"
     tools:context=".NaviActivity">
 
     <FrameLayout
@@ -16,17 +15,20 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
         android:layout_weight="1"
-
-        app:itemBackground="@color/green"
+        app:itemIconSize="55dp"
+        app:itemBackground="@color/white"
         app:itemIconTint="@drawable/menu_click_color"
         app:itemTextColor="@drawable/menu_click_color"
-        app:itemIconSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/navi_menu"
         tools:ignore="MissingConstraints"
-        style="@style/BottomNavigationView"/>
+        app:itemTextAppearanceActive="@style/TextAppearance.BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/TextAppearance.BottomNavigationView.Inactive"
+
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

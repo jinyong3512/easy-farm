@@ -1,6 +1,8 @@
 package com.capstone.easyfarm
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -36,13 +38,15 @@ class Fragment2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        requireActivity().window.statusBarColor = requireActivity().getColor(R.color.fragment_statusBar_color_2)
+
         val binding = Fragment2Binding.inflate(inflater, container, false)
 
-        binding.btn1.setColorFilter(resources.getColor(R.color.green))
-        binding.btn2.setColorFilter(resources.getColor(R.color.green))
-        binding.btn3.setColorFilter(resources.getColor(R.color.green))
-//        binding.btn4.setColorFilter(resources.getColor(R.color.green))
-        binding.btn5.setColorFilter(resources.getColor(R.color.green))
+        binding.btn1.setColorFilter(resources.getColor(R.color.white))
+        binding.btn2.setColorFilter(resources.getColor(R.color.white))
+        binding.btn3.setColorFilter(resources.getColor(R.color.white))
+        binding.btn5.setColorFilter(resources.getColor(R.color.white))
+
 
 
         // btn1(도감) 누를 시 "2" 전달하고 PlantSelectActivity로 이동
