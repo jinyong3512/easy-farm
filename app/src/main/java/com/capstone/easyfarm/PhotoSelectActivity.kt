@@ -2,11 +2,14 @@ package com.capstone.easyfarm
 
 import android.Manifest
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.ContentUris
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.Cursor
+import android.graphics.ImageDecoder
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
@@ -19,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import com.bumptech.glide.Glide
 import com.capstone.easyfarm.databinding.ActivityPhotoselectBinding
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -37,7 +41,6 @@ class PhotoSelectActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityPhotoselectBinding
 
-
     val PERMISSIONS = arrayOf(
         Manifest.permission.CAMERA,
         Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -49,16 +52,13 @@ class PhotoSelectActivity : AppCompatActivity() {
     private val BUTTON2 = 200
     private var photoUri: Uri? = null
 
-
     var realPath: String? = ""
-
 
     data class ResponseDTO_Flask(val result: Result)
     data class Result(val pestName: String, val pestPercentage: Double)
 
     var pestName = "init_pestName"
     var pestPercentage = 0.19971016
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,7 +68,6 @@ class PhotoSelectActivity : AppCompatActivity() {
         showProgressBar(false)
 
         supportActionBar?.title = "사진 선택"
-
 
         checkPermissions(PERMISSIONS, PERMISSIONS_REQUEST)
 
@@ -127,8 +126,13 @@ class PhotoSelectActivity : AppCompatActivity() {
         if (resultCode == Activity.RESULT_OK) {
             when (requestCode) {
                 BUTTON1 -> {
-                    binding.iv1.setImageURI(photoUri)
+                    val imageBitmap =
+                        photoUri?.let { ImageDecoder.createSource(this.contentResolver, it) }
+                    binding.iv1.setImageBitmap(imageBitmap?.let { ImageDecoder.decodeBitmap(it) })
                     Toast.makeText(this, photoUri?.path, Toast.LENGTH_LONG).show()
+
+//                    binding.iv1.setImageURI(photoUri)
+//                    Toast.makeText(this, photoUri?.path, Toast.LENGTH_LONG).show()
                 }
                 BUTTON2 -> {
                     photoUri = data?.data
@@ -332,7 +336,22 @@ class PhotoSelectActivity : AppCompatActivity() {
                         binding.btn1.isClickable = true
                         binding.btn2.isClickable = true
                         binding.btn3.isClickable = true
-                        startActivity(intent)
+
+                        if (pestPercentage <= 0.95) {
+                            // 다이얼로그를 생성하기 위해 Builder 클래스 생성자를 이용해 줍니다.
+                            val builder = AlertDialog.Builder(this@PhotoSelectActivity)
+
+                            builder.setTitle("사진 오류")
+                                .setMessage("작물로 인식하지 못했습니다. 다른 이미지를 사용해 주세요")
+                                .setPositiveButton("확인",
+                                    DialogInterface.OnClickListener { dialog, id ->
+                                    })
+
+                            // 다이얼로그를 띄워주기
+                            builder.show()
+                        } else {
+                            startActivity(intent)
+                        }
 
                     } else {
                         Log.d("response 실패", response.code().toString())
