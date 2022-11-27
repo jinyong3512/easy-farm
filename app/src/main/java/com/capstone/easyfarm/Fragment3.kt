@@ -27,7 +27,12 @@ class Fragment3 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        requireActivity().window.statusBarColor = requireActivity().getColor(R.color.fragment_statusBar_color_2)
+
         binding = Fragment3Binding.inflate(inflater, container, false)
+
+        binding.btn1.setColorFilter(resources.getColor(R.color.white))
+
 
         binding.tv1.text = "디바이스 ID : " + SplashActivity.deviceId
 

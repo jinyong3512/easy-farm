@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/noticeboard_image_background"
     tools:context=".MyRecordActivity">
 
     <TextView
@@ -28,7 +29,7 @@
         android:id="@+id/listview1"
 
         android:layout_width="match_parent"
-        android:layout_height="780dp"
+        android:layout_height="700dp"
 
         android:divider="#ffffff"
         android:dividerHeight="10dp"

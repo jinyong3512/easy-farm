@@ -29,7 +29,7 @@
         android:id="@+id/mainLV"
 
         android:layout_width="350dp"
-        android:layout_height="780dp"
+        android:layout_height="700dp"
 
         android:divider="#ffffff"
         android:dividerHeight="10dp"

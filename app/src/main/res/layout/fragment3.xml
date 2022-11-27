@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Fragment3">
 
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+
+        android:src="@drawable/fragment2_image_iv1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv1"
 
@@ -45,29 +56,32 @@
 
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="264dp"
 
-
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#BE9CFA"
         android:src="@drawable/fragment3_icon_alarmsetting"
 
-
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView1"
 
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
 
         android:gravity="center"
-        android:text="푸시 알림 설정"
-        android:textColor="@color/black"
 
-        android:textSize="30sp"
+        android:text="푸시 알림 설정"
+        android:textColor="#7F7F7F"
+        android:textSize="25sp"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn1" />
 
