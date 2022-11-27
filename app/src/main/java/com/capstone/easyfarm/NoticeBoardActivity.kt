@@ -46,7 +46,6 @@ class NoticeBoardActivity : AppCompatActivity() {
             })
 
         val writeButton = findViewById<ImageView>(R.id.writeBtn)
-        writeButton.setColorFilter(resources.getColor(R.color.green))
         writeButton.setOnClickListener {
 
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
@@ -70,7 +69,7 @@ class NoticeBoardActivity : AppCompatActivity() {
                         view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
                     ) {
 
-                        DateSelectBtn.setText("${year}-${month + 1}-${dayOfMonth}")
+                        DateSelectBtn.text = "${year}-${month + 1}-${dayOfMonth}"
 
                         dateText = "${year}-${month + 1}-${dayOfMonth}"
                     }

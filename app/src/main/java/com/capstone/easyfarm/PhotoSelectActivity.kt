@@ -22,7 +22,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import com.bumptech.glide.Glide
 import com.capstone.easyfarm.databinding.ActivityPhotoselectBinding
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

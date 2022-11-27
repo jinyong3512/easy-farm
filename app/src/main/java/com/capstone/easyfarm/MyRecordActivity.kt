@@ -27,9 +27,6 @@ class MyRecordActivity : AppCompatActivity() {
         binding = ActivityMyrecordBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        supportActionBar?.title = "나의 기록"
-
         for (i in 0 until Fragment2.results_List.size) {
             var item = ListViewBtnItem()
             item.MyPlant_image_URL = Fragment2.results_List[i].MyPlant_image_URL

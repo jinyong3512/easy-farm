@@ -26,7 +26,7 @@ class ListViewBtnAdapter internal constructor(
         val textView1 = convertView.findViewById<View>(R.id.textView1) as TextView
         val textView2 = convertView.findViewById<View>(R.id.textView2) as TextView
         val textView3 = convertView.findViewById<View>(R.id.textView3) as TextView
-        val tv1 = convertView.findViewById<View>(R.id.tv1) as TextView
+
 
         val listViewItem = getItem(position) as ListViewBtnItem?
 
@@ -55,7 +55,6 @@ class ListViewBtnAdapter internal constructor(
         if (listViewItem.MyPlant_Pest.substring(0 until 2) == "정상") {
             (convertView.findViewById<View>(R.id.button1) as ImageButton).visibility =
                 View.INVISIBLE
-            tv1.visibility = View.INVISIBLE
         }
         textView2.text = "${listViewItem.MyPlant_Percentage}%"
         textView3.text = listViewItem.MyPlant_Date.substring(0..9)
@@ -63,12 +62,12 @@ class ListViewBtnAdapter internal constructor(
         val button1 = convertView.findViewById<View>(R.id.button1) as ImageButton
         button1.tag = position
         button1.setOnClickListener(this)
-        button1.imageTintList = ColorStateList.valueOf(Color.parseColor("#8BC34A"))
+
 
         val button2 = convertView.findViewById<View>(R.id.button2) as ImageButton
         button2.tag = position
         button2.setOnClickListener(this)
-        button2.imageTintList = ColorStateList.valueOf(Color.parseColor("#8BC34A"))
+
 
         return convertView
     }
