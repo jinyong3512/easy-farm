@@ -128,7 +128,7 @@ class PhotoSelectActivity : AppCompatActivity() {
                     val imageBitmap =
                         photoUri?.let { ImageDecoder.createSource(this.contentResolver, it) }
                     binding.iv1.setImageBitmap(imageBitmap?.let { ImageDecoder.decodeBitmap(it) })
-                    Toast.makeText(this, photoUri?.path, Toast.LENGTH_LONG).show()
+//                    Toast.makeText(this, photoUri?.path, Toast.LENGTH_LONG).show()
 
 //                    binding.iv1.setImageURI(photoUri)
 //                    Toast.makeText(this, photoUri?.path, Toast.LENGTH_LONG).show()

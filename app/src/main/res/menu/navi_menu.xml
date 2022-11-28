@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/it1"
-        android:title="검사"
+        android:title="진단"
         android:icon="@drawable/navi_icon_1"
         />
 
