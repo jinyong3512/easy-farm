@@ -28,15 +28,15 @@ class SplashActivity : AppCompatActivity() {
 
     companion object {
 
-        //        val BASE_URL_FLASK = "http://192.168.0.101:5000/"       // WIFI home
+//        val BASE_URL_FLASK = "http://192.168.0.101:5000/"       // WIFI home
 //        val BASE_URL_FLASK = "http://192.168.21.15:5000/"       // HOTSPOT
 //        val BASE_URL_FLASK = "http://34.64.86.255:5000/"        // HOTSPOT 원형
         val BASE_URL_FLASK = "http://34.64.86.255:5000/"        // AWS 원형
 
-        //        val BASE_URL_NODEJS = "http://192.168.0.101:3000/"      // WIFI home
+//        val BASE_URL_NODEJS = "http://192.168.0.101:3000/"      // WIFI home
 //        val BASE_URL_NODEJS = "http://192.168.21.15:3000/"      // HOTSPOT
-//        val BASE_URL_NODEJS = "http://192.168.21.178:3000/"     // HOTSPOT 라연
         val BASE_URL_NODEJS = "http://18.144.156.210:3000/"     // AWS 라연
+//        val BASE_URL_NODEJS = "http://192.168.112.178:3000/"    // HOTSPOT 라연
 
         var deviceId = "init_deviceId"
         var latitude = 0.19971016
