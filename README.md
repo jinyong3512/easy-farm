@@ -6,7 +6,7 @@
     </a>
 </p>
 <br>
-<p align='center' style='font-size:150%'>EasyFarm은 노지작물 병해 검출 및 분류 플랫폼 구축 Capstone Design 프로젝트 입니다.</p>
+<p align='center' style='font-size:150%'>EasyFarm은 노지 작물 병해충 검출 및 분류 플랫폼 구축 Capstone Design 프로젝트입니다.</p>
 <br>
 
 
