@@ -1,19 +1,12 @@
 
-<h1 align="center" style='font-family: palatino Linotype'> Smart Notice Bot</h1>
+<h1 align="center" style='font-family: palatino Linotype'> EasyFarm</h1>
 <p align="center">
-    <a href ="https://github.com/Smart-Notice-Bot/Smart.Notice.Bot/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-Apache--2.0-blue?style=plastic&link=https://github.com/Smart-Notice-Bot/Smart.Notice.Bot/blob/main/LICENSE">
+    <a href ="https://github.com/jinyong3512/easyfarm/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/license-Apache--2.0-blue?style=plastic&link=https://github.com/jinyong3512/easyfarm/blob/main/LICENSE">
     </a>
 </p>
-<h4 align="center">
-    <p>
-        <b>한국어</b> |
-        <a href="https://github.com/Smart-Notice-Bot/Smart.Notice.Bot/blob/main/README_en.md">English</a>
-    <p>
-</h4>
 <br>
 <p align='center' style='font-size:150%'>Smart Notice Bot은 이메일을 통해 대학교 공지사항을 알려주는 오픈소스 프로젝트입니다. </p>
-
 <br>
 
 
