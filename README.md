@@ -39,8 +39,7 @@ $ git commit -m "PR Title"
 ## :page_with_curl: 라이센스
 APACHE LICENSE, VERSION 2.0
 
-
-
+<br>
 
 ## 📖 참고자료
 에뮬레이터 Pixel 2 Q : API 29
