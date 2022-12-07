@@ -41,7 +41,7 @@ APACHE LICENSE, VERSION 2.0
 
 <br>
 
-## 📖 참고자료
+## 📖 참고 자료
 에뮬레이터 Pixel 2 Q : API 29
 
 Splash
