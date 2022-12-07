@@ -45,18 +45,23 @@ APACHE LICENSE, VERSION 2.0
 에뮬레이터 Pixel 2 Q : API 29
 
 Splash
+
 [https://korean-otter.tistory.com/entry/android-kotlin-Splash-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Splash-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 디바이스 ID
+
 [https://devsmin.tistory.com/49](https://devsmin.tistory.com/49)
 
 위치정보
+
 [https://fre2-dom.tistory.com/134](https://fre2-dom.tistory.com/134)
 
 카메라
+
 [https://juahnpop.tistory.com/223](https://juahnpop.tistory.com/223)
 
 갤러리
+
 [https://devforyou.tistory.com/entry/안드로이드코틀린-앨범-만들기4-갤러리에서-이미지-가져오기-안드로이드-SAFStorage-Access-Framework](https://devforyou.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%95%A8%EB%B2%94-%EB%A7%8C%EB%93%A4%EA%B8%B04-%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-SAFStorage-Access-Framework)
 
 Uri to path
