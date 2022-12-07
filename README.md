@@ -40,7 +40,9 @@ $ git commit -m "PR Title"
 APACHE LICENSE, VERSION 2.0
 
 
-## :📖: 참고자료
+
+
+## 📖 참고자료
 에뮬레이터 Pixel 2 Q : API 29
 
 Splash
