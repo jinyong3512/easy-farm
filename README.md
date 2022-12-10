@@ -6,7 +6,7 @@
     </a>
 </p>
 <br>
-<p align='center' style='font-size:150%'>EasyFarm은 노지 작물 병해충 검출 및 분류 플랫폼 구축 Capstone Design 프로젝트입니다.</p>
+<p align='center' style='font-size:150%'>EasyFarm은 노지 작물 병해충 검출 및 분류 플랫폼 구축 Capstone Design 프로젝트입니다</p>
 <br>
 
 
@@ -27,8 +27,8 @@ jdk-17.0.2 & Android Studio
 <br>
 
 ## :loudspeaker: Contributing 하는 방법 
-Contribution과 issue는 언제든 환영합니다. 이 repository에 대해 PR을 제출할 수 있으며, 승인이 된다면 적용되어 배포될 것입니다.<br>
-PR 제목을 포함한 Commit message는 아래와 같이 작성하면 됩니다.<br>
+Contribution과 issue는 언제든 환영합니다. 이 repository에 대해 PR을 제출할 수 있으며, 승인이 된다면 적용되어 배포될 것입니다<br>
+PR 제목을 포함한 Commit message는 아래와 같이 작성하면 됩니다<br>
 ```
 $ git commit -m "PR Title"
 ```
