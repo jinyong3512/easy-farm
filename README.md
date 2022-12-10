@@ -40,8 +40,7 @@ $ git commit -m "PR Title"
 ## 📖 참고 자료
 에뮬레이터 Pixel 2 Q : API 29
 
-Splash
-
+Splash<br>
 [https://korean-otter.tistory.com/entry/android-kotlin-Splash-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Splash-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 디바이스 ID<br>
@@ -67,9 +66,7 @@ retrofit2 post image<br>
 
 navigationBar<br>
 [https://mimisongsong.tistory.com/33](https://mimisongsong.tistory.com/33)
-
 [https://korean-otter.tistory.com/entry/android-kotlin-Fragment-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Fragment-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
-
 [https://velog.io/@jinny_0422/Android-Fragment-Activity간-데이터전달](https://velog.io/@jinny_0422/Android-Fragment-Activity%EA%B0%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EB%8B%AC)
 
 Reverse-GeoCoding - 위치 (위도,경도) → 주소<br>
@@ -77,7 +74,6 @@ Reverse-GeoCoding - 위치 (위도,경도) → 주소<br>
 
 Nodejs<br>
 [https://hntown43.tistory.com/11](https://hntown43.tistory.com/11)
-
 [https://g-song-ii.tistory.com/11](https://g-song-ii.tistory.com/11)
 
 ListView<br>
