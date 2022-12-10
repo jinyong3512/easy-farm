@@ -65,8 +65,8 @@ retrofit2 post image<br>
 [https://salix97.tistory.com/251](https://salix97.tistory.com/251)
 
 navigationBar<br>
-[https://mimisongsong.tistory.com/33](https://mimisongsong.tistory.com/33)
-[https://korean-otter.tistory.com/entry/android-kotlin-Fragment-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Fragment-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+[https://mimisongsong.tistory.com/33](https://mimisongsong.tistory.com/33)<br>
+[https://korean-otter.tistory.com/entry/android-kotlin-Fragment-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Fragment-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)<br>
 [https://velog.io/@jinny_0422/Android-Fragment-Activity간-데이터전달](https://velog.io/@jinny_0422/Android-Fragment-Activity%EA%B0%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EB%8B%AC)
 
 Reverse-GeoCoding - 위치 (위도,경도) → 주소<br>
