@@ -38,43 +38,43 @@ $ git commit -m "PR Title"
 <br>
 
 ## 📖 참고 자료
-에뮬레이터 Pixel 2 Q : API 29
+>에뮬레이터 Pixel 2 Q : API 29
 
-Splash<br>
-[https://korean-otter.tistory.com/entry/android-kotlin-Splash-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Splash-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+>Splash<br>
+>[https://korean-otter.tistory.com/entry/android-kotlin-Splash-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Splash-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
-디바이스 ID<br>
-[https://devsmin.tistory.com/49](https://devsmin.tistory.com/49)
+>디바이스 ID<br>
+>[https://devsmin.tistory.com/49](https://devsmin.tistory.com/49)
 
-위치정보<br>
-[https://fre2-dom.tistory.com/134](https://fre2-dom.tistory.com/134)
+>위치정보<br>
+>[https://fre2-dom.tistory.com/134](https://fre2-dom.tistory.com/134)
 
-카메라<br>
-[https://juahnpop.tistory.com/223](https://juahnpop.tistory.com/223)
+>카메라<br>
+>[https://juahnpop.tistory.com/223](https://juahnpop.tistory.com/223)
 
-갤러리<br>
-[https://devforyou.tistory.com/entry/안드로이드코틀린-앨범-만들기4-갤러리에서-이미지-가져오기-안드로이드-SAFStorage-Access-Framework](https://devforyou.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%95%A8%EB%B2%94-%EB%A7%8C%EB%93%A4%EA%B8%B04-%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-SAFStorage-Access-Framework)
+>갤러리<br>
+>[https://devforyou.tistory.com/entry/안드로이드코틀린-앨범-만들기4-갤러리에서-이미지-가져오기-안드로이드-SAFStorage-Access-Framework](https://devforyou.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%95%A8%EB%B2%94-%EB%A7%8C%EB%93%A4%EA%B8%B04-%EA%B0%A4%EB%9F%AC%EB%A6%AC%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-SAFStorage-Access-Framework)
 
-Uri to path<br>
-[https://featherwing.tistory.com/19](https://featherwing.tistory.com/19)
+>Uri to path<br>
+>[https://featherwing.tistory.com/19](https://featherwing.tistory.com/19)
 
-retrofit2 post image<br>
-[https://machine-woong.tistory.com/171](https://machine-woong.tistory.com/171)
+>retrofit2 post image<br>
+>[https://machine-woong.tistory.com/171](https://machine-woong.tistory.com/171)
 
-액티비티 백 스택 제거<br>
-[https://salix97.tistory.com/251](https://salix97.tistory.com/251)
+>액티비티 백 스택 제거<br>
+>[https://salix97.tistory.com/251](https://salix97.tistory.com/251)
 
-navigationBar<br>
-[https://mimisongsong.tistory.com/33](https://mimisongsong.tistory.com/33)<br>
-[https://korean-otter.tistory.com/entry/android-kotlin-Fragment-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Fragment-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)<br>
-[https://velog.io/@jinny_0422/Android-Fragment-Activity간-데이터전달](https://velog.io/@jinny_0422/Android-Fragment-Activity%EA%B0%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EB%8B%AC)
+>navigationBar<br>
+>[https://mimisongsong.tistory.com/33](https://mimisongsong.tistory.com/33)<br>
+>[https://korean-otter.tistory.com/entry/android-kotlin-Fragment-사용하기](https://korean-otter.tistory.com/entry/android-kotlin-Fragment-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)<br>
+>[https://velog.io/@jinny_0422/Android-Fragment-Activity간-데이터전달](https://velog.io/@jinny_0422/Android-Fragment-Activity%EA%B0%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EB%8B%AC)
 
-Reverse-GeoCoding - 위치 (위도,경도) → 주소<br>
-[https://bumjae.tistory.com/54](https://bumjae.tistory.com/54)
+>Reverse-GeoCoding - 위치 (위도,경도) → 주소<br>
+>[https://bumjae.tistory.com/54](https://bumjae.tistory.com/54)
 
-Nodejs<br>
-[https://hntown43.tistory.com/11](https://hntown43.tistory.com/11)
-[https://g-song-ii.tistory.com/11](https://g-song-ii.tistory.com/11)
+>Nodejs<br>
+>[https://hntown43.tistory.com/11](https://hntown43.tistory.com/11)<br>
+>[https://g-song-ii.tistory.com/11](https://g-song-ii.tistory.com/11)
 
-ListView<br>
-[https://recipes4dev.tistory.com/45](https://recipes4dev.tistory.com/45)
+>ListView<br>
+>[https://recipes4dev.tistory.com/45](https://recipes4dev.tistory.com/45)
