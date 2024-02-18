@@ -11,12 +11,11 @@ Kotlin Retrofit Node.js Flask Firebase
 ## 기간
 2022.09 ~ 2022.12
 
-# [시연영상](https://www.notion.so/jinyong3512/Easy-Farm-b782bb8e366b468d84dfd94d0c1dc9b2)
+# [시연영상](https://jinyong3512.notion.site/sejong-university-easy-farm-b782bb8e366b468d84dfd94d0c1dc9b2?pvs=4)
 
 ## 프로젝트 진행
 - 병해충을 판단해줄 전문 인력 부족으로 앱을 통한 간편한 진단 서비스
 - 안드로이드 1명,서버 1명, 인공지능 2명 총 4명이 팀을 이루어 제작한 프로젝트
-- 안드로이드 부분을 담당하여 UI/UX 디자인과 구현, 서버와 데이터 통신을 담당
 
 ## 구현 목록
 >1. [완료] 딥러닝을 이용한 병해충 판단 서비스
@@ -75,34 +74,3 @@ Kotlin Retrofit Node.js Flask Firebase
     <br>
     <img src="img/alarm.jpg" width="200" height="400">
 
-## 어려움
-<aside>
-💡 서버로 이미지와 식물 종류를 어떻게 전송하지?
-
-</aside>
-
-- ❗MultipartBody.Part로 보내면 된다
-- ❗retrofit2 post image https://machine-woong.tistory.com/171
-<aside>
-💡 Splash에서 유저 정보(디바이스 ID, 위도, 경도 데이터)를 구하는데 가끔 안구한다
-
-</aside>
-
-- ❓구하는 작업이 비동기적으로 처리되어 MainActivity로 넘어가버리면 오류 발생
-- ❗유저 정보를 먼저 확실히 구하고 그 뒤에 코드를 붙여 써서 통신을 하고 1초 강제로 기다리게 한뒤에 MainActivity로 전환한다
-<aside>
-💡 나의 기록 ListView에서 아이템 삭제 시 아이템의 정보가 밀려서 보인다
-
-</aside>
-
-- ❓원래의 정보가 남아 있다 Adapter를 갱신하지 않아서 그런걸로 판단
-- ❗ListView https://recipes4dev.tistory.com/45
-
-## 프로젝트 후기
-
-- 좋은 점
-    - 팀원들과의 원활한 협업을 위해 DB와 인공지능 모델은 없는 로컬 서버를 개인적으로 돌려보며 통신을 연습해가서 팀원들과 협업할때 쉽게 진행되고 서버도 조금이나마 경험해봤다
-    - 사용자의 편의를 중점적으로  직접 UI/UX를 디자인하며 팀원들과 논의하여 수정해나가는 협업을 했다
-
-- 부족한 점
-    - 안드로이드 부분에 집중하느라 정확히 DB와 인공지능 학습에서는 어떤 일이 일어나는지 공부하지 못했다
