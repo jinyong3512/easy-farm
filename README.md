@@ -6,7 +6,7 @@
 안드로이드와 인공지능을 이용한 노지 작물 병해충 검출 및 분류 플랫폼 구축 Capstone Design 프로젝트
 
 ## 기술 스택
-Kotlin Retrofit Node.js Flask Firebase
+Kotlin Firebase Retrofit Express Flask 
 
 ## 기간
 2022.09 ~ 2022.12
